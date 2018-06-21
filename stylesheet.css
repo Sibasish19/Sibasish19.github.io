@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 3.5rem;
+}
+
+#landing-text-inner h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: #333;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-shadow: 25px 5px 35px rgba(0,0,0,0.15), -25px 0px 35px rgba(0,0,0,0.15);
+}
+
+#landing {
+    background-color: white;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 45vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+    padding: 0.4rem 1.3rem;
+    border: 2px solid #000;
+    background: linear-gradient(to right, white 34%, #000 65%);
+    background-size: 300% 100%;
+    background-position:left bottom;        
+    border-radius: 50px;
+}
+
+.btn:hover{
+    color: #FFF;
+    transition: all 0.5s linear;
+    background-position: right bottom;
+}
+
+#landing-image {
+    background-image: url('../landingimg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    flex: 0 1 55vw;
+}
+
+#header {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+}
+
+#header h2 {
+    border-left: dotted 2px #FFF;
+    border-right: dotted 2px #FFF;
+    display: inline-block;
+    padding: 0 33px;
+}
+
+.caption {
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFF;
+}
+
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+}
+
+#logo {
+    font-family: 'Sacramento', cursive;
+    text-decoration: none;
+    color: #eee;
+    padding: 12px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+footer h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* For deviceshaving width more than or equal to 769px */
+@media(min-width: 769px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+        background-position: right;
+    }
+
+    .btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
